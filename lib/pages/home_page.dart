@@ -28,28 +28,30 @@ class _HomePageState extends State<HomePage> {
           children:[
             Text('Resultado:',style: estiloso),
             Text('$cont',style: estiloso),
-          
           ]
         ),
       ),
       floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
             backgroundColor: Colors.black,
             onPressed: sumar, 
             child: const Icon(Icons.add),
             ),
+            const SizedBox(width: 40),
             FloatingActionButton(
             backgroundColor: Colors.black,
             onPressed: restar, 
             child: const Icon(Icons.remove),
             ),
+            const SizedBox(width: 40),
             FloatingActionButton(
             backgroundColor: Colors.black,
             onPressed: multiplicar, 
             child: const Icon(Icons.clear),
             ),
+            const SizedBox(width: 40),
             FloatingActionButton(
             backgroundColor: Colors.black,
             onPressed: dividir, 
