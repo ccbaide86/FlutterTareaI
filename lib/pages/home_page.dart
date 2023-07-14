@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   double cont = 10;
 
-  final style = const TextStyle(
+  final estiloso = const TextStyle(
     fontSize: 40,
     fontWeight: FontWeight.w800,
   );
@@ -26,7 +26,8 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:[
-            Text('Resultado: $cont',style: style),
+            Text('Resultado:',style: estiloso),
+            Text('$cont',style: estiloso),
           
           ]
         ),
